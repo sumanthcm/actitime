@@ -11,6 +11,7 @@ public class Demo4 {
 		String [] data= {"Bhanu", "Surya"};
 		return data;
 	}
+	//calling getData() before running CreateUser()
 	@Test(dataProvider="getData")
 	void CreateUser(String name) {
 		Reporter.log("User Name:"+name, true);
